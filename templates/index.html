@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sudoku Solver</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <h1>🧩 Sudoku Solver</h1>
+
+        <p class="subtitle">
+            Solve Sudoku using the Backtracking Algorithm
+        </p>
+
+
+        <!-- Sudoku Board -->
+
+        <div id="sudoku-board"></div>
+
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button id="solveBtn">
+                Solve Sudoku
+            </button>
+
+            <button id="clearBtn">
+                Clear
+            </button>
+
+            <button id="resetBtn">
+                Reset
+            </button>
+
+        </div>
+
+
+        <!-- Message -->
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
